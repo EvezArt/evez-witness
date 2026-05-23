@@ -1,17 +1,22 @@
-# EVEZ Witness
+# EVEZ Witness — Audit & Compliance Engine
 
-Compliance and policy enforcement API for EVEZ agents.
+Continuous auditing and compliance verification for the EVEZ stack.
 
-## Run
+## What It Does
+- Real-time audit logging
+- Contradiction detection via CAIN engine
+- Compliance verification against FSC doctrine
+- MAES event spine integration
+
+## Quick Start
+
 ```bash
-uvicorn witness:app --reload
+git clone https://github.com/EvezArt/evez-witness.git
+cd evez-witness
+pip install -r requirements.txt
+python witness.py
 ```
 
-## API
-- `GET /health` — Health check
-- `POST /report` — Report a violation
-- `GET /violations` — List violations
-- `GET /audit` — Audit summary
-
 ---
-*Built by EVEZ Factory (Steven AI)*
+
+*Part of [EVEZ-OS](https://github.com/EvezArt/evez-os) • $6/mo • Zero API Cost*
